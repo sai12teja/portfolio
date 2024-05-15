@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>sai teja</title>
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href=" ">SAI TEJA</a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="C:\Users\91630\Desktop\sai teja\index.html"style="--navAni:1">Home</a></li>
+                    <li><a href="C:\Users\91630\Desktop\sai teja\about.html"class="active" style="--navAni:2">About</a></li>
+                    <li><a href="C:\Users\91630\Desktop\sai teja\skills.html" style="--navAni:3">Skills</a></li>
+                    <li><a href="C:\Users\91630\Desktop\sai teja\contact.html" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="main">
+                <div class="detail">
+                    <body>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section>
+        
+        <p>Hello there! I'm <strong>GARABAPU SAI TEJA </strong>, an aspiring <strong> computer science </strong> enthusiast with a passion for <strong> Machine Learning and Data Science</strong>. As a recent graduate, I am excited to embark on a journey where creativity, innovation, and continuous learning collide.</p>
+
+        <h2>Education</h2>
+        <p> I graduated from <strong>CMR Institute of Technology</strong> with a Bachelor's degree in Computer Science. My academic journey was a blend of rigorous coursework and hands-on projects, where I gained a solid foundation in algorithms, data structures, and software development methodologies.</p>
+
+        <h2>Skills</h2>
+        <p>Armed with a robust set of skills in programming languages like <strong>Java, Python, and JavaScript</strong>, I am ready to tackle challenges in both front-end and back-end development. My dedication to learning extends beyond the classroom, with a keen interest in staying abreast of the latest technologies shaping the field.</p>
+
+        <h2>Beyond the Screen</h2>
+        <p>Outside of coding, I enjoy <strong> Cooking,Gardening,Traveling</strong>, finding inspiration in diverse experiences that contribute to my creativity and problem-solving skills. </p>
+
+        <h2>Let's Connect!</h2>
+        <p>I am enthusiastic about the prospect of applying my skills and knowledge in a professional setting. Feel free to explore my portfolio for a closer look at my projects and achievements. I'm excited about the possibility of contributing to your team!</p>
+
+        <p>Thank you for visiting my portfolio.</p>
+
+        <p><strong>GARABAPU SAI TEJA</strong><br>
+        <strong>sgarabapu@gmail.com</strong><br>
+                </div>
+                <div class="images">
+                    <img src="C:\Users\91630\Desktop\sai teja\WhatsApp Image 2024-02-04 at 12.14.33_feb50aa1.jpg" alt="" class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

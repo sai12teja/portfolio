@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>saiteja</title>
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href=" ">SAI TEJA</a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="C:\Users\91630\Desktop\sai teja\about.html" style="--navAni:2">About</a></li>
+                    <li><a href="C:\Users\91630\Desktop\sai teja\skills.html" style="--navAni:3">Skills</a></li>
+                    
+                    <li><a href="C:\Users\91630\Desktop\sai teja\contact.html" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="main">
+                <div class="detail">
+                    <h3>Hi, I'm</h3>
+                    <h1><span style="color:#52489C;">SAI</span> TEJA</h1> 
+                    <p>As an aspiring software engineer, my focus is on delivering top-notch web development solutions to satisfy the needs 
+					of both local and global clients. I am dedicated to honing my skills and staying updated with the latest
+					technologies to provide effective and innovative solutions. My goal is to contribute positively to projects,
+					ensuring client satisfaction and making a meaningful impact in the world of software engineering.
+                    </p>  
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/sai-teja-819005261/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/sai_officialspam00?igsh=aWNqaXJ1aHFxbXlu" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/sai12teja" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                        
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="C:\Users\91630\Desktop\sai teja\WhatsApp Image 2024-02-04 at 12.14.33_feb50aa1.jpg" alt="" class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>
